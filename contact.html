@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    background-image: url("Tree.jpg");
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .container {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  form {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  textarea {
+    width: 90%;
+    height: 100px;
+    resize: none; /* Prevent resizing the textarea */
+    border-radius: 4px;
+  }
+
+  form button {
+    margin-left: 85px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    /* border: none; */
+    /* cursor: pointer; */
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+<body>
+    <!-- Contact Us Section -->
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="Name">Name</label>
+            <input type="text" id="Name" name="Name" placeholder="Enter your Name" required>
+
+            <label for="Email">Email</label>
+            <input type="email" id="email" placeholder="Enter your Email" required>
+
+            <label for="Massage">Message</label>
+            <textarea id="Massage" name="Massage" placeholder="Enter your Message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
